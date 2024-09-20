@@ -1,47 +1,56 @@
 Araç Ağırlık Optimizasyonu ve Performans Analizi
-Bu proje, bir aracın farklı bileşenlerine ait ağırlıkların optimize edilmesi ve aracın genel performansını artırmak için çeşitli optimizasyon tekniklerini uygular. Ağırlık dağılımı ve performans katsayıları göz önünde bulundurularak toplam ağırlık sınırlarına uygun çözümler sunulur.
+Bu repo, bir aracın bileşenlerine ait ağırlık optimizasyonu ve performans analizine yönelik üç farklı çalışmayı içermektedir. Bu çalışmalar, ağırlık optimizasyonu, boyut indirgeme, kümeleme algoritmaları ve performans katkısının dikkate alındığı optimizasyonlar üzerine odaklanmaktadır.
 
 İçerik
-Kullanılan Kütüphaneler
-Projenin Ana Amacı
-Proje Adımları
-Ağırlık Optimizasyonu (İlk Çalışma)
-Ağırlık ve Performans Optimizasyonu (İkinci Çalışma)
-Sonuçlar ve Analizler
+Kümeleme ve Boyut İndirgeme
+Ağırlık Optimizasyonu
+Ağırlık ve Performans Optimizasyonu
+1. Kümeleme ve Boyut İndirgeme
+Bu çalışmada, araç bileşenlerinin ağırlıkları ve performans parametrelerine dayanarak K-Means ve DBSCAN kümeleme algoritmaları kullanılmıştır. Ayrıca PCA (Principal Component Analysis) ile boyut indirgeme yapılmıştır.
+
+Adımlar:
+Verilerin normalizasyonu (StandardScaler)
+K-Means ile kümeleme (n_clusters=2)
+DBSCAN algoritması ile kümeleme
+PCA ile boyut indirgeme ve görselleştirme
+Görselleştirme:
+PCA sonuçları, K-Means küme etiketleri ile görselleştirilmiştir.
+
+Kullanılan Kütüphaneler:
+numpy, pandas, scikit-learn, matplotlib
+
+2. Ağırlık Optimizasyonu
+Bu çalışmada, aracın farklı bileşenlerine ait ağırlıkların minimize edilmesi amacıyla SLSQP optimizasyon yöntemi kullanılmıştır. Amaç, toplam ağırlık sınırına (225 kg) uygun çözümler üretmek ve belirlenen minimum ve maksimum sınırlar dahilinde ağırlıkları optimize etmektir.
+
+Adımlar:
+Başlangıç ağırlıklarının belirlenmesi
+Minimum ve maksimum ağırlık sınırlarının tanımlanması
+Toplam ağırlık sınırının dikkate alındığı optimizasyon
+Bileşen bazında optimize edilmiş ağırlıkların hesaplanması
+Sonuçlar:
+Optimizasyon başarılı olduğunda, toplam ağırlık sınırı aşılmadan en uygun bileşen ağırlıkları elde edilmektedir.
+
+Kullanılan Kütüphaneler:
+numpy, scipy
+
+3. Ağırlık ve Performans Optimizasyonu
+Bu çalışmada, sadece ağırlıkları optimize etmekle kalmayıp, bileşenlerin araç performansına katkısı da dikkate alınmıştır. Performansa katkı katsayıları (negatif değerler) ile toplam ağırlık ve performans kazancı birlikte optimize edilmiştir.
+
+Adımlar:
+Ağırlıkların yanı sıra performans katsayılarının dahil edilmesi
+Toplam ağırlık ve performans kazancına dayalı bir hedef fonksiyon
+Ağırlık sınırları ve toplam ağırlık kısıtı ile optimizasyon
+Bileşen bazında optimize edilmiş ağırlık ve performans analizleri
+Sonuçlar:
+Performans ve ağırlık optimize edilerek aracın verimliliği artırılmıştır.
+
+Kullanılan Kütüphaneler:
+numpy, scipy
+
 Kurulum ve Çalıştırma
-Kullanılan Kütüphaneler
-Bu projede aşağıdaki Python kütüphaneleri kullanılmıştır:
-
-numpy
-scipy
-Projenin Ana Amacı
-Bu proje, aracın çeşitli bileşenlerinin ağırlıklarını optimize etmeyi ve toplam ağırlık sınırını aşmadan bu bileşenlerin ağırlıklarını minimum seviyeye çekmeyi amaçlamaktadır. İkinci aşamada, ağırlıkların performansa olan etkisi de göz önüne alınarak daha verimli bir optimizasyon yapılmıştır.
-
-Proje Adımları
-Ağırlık Optimizasyonu (İlk Çalışma)
-İlk çalışma, toplam araç ağırlığının minimize edilmesi amacıyla yapılmıştır. Verilen her bir bileşen için minimum ve maksimum ağırlık sınırları belirlenmiş, toplam ağırlık 225 kg ile sınırlandırılmıştır. Ağırlıkları optimize ederken SLSQP optimizasyon yöntemi kullanılmıştır.
-
-Kullanılan Bileşenler:
-Motor Ağırlığı
-Yakıt Hücresi Ağırlığı
-Şasi Ağırlığı
-Hidrojen Tankı Ağırlığı
-Tekerlekler Ağırlığı
-Süspansiyon Ağırlığı
-Aktarma Organları Ağırlığı
-Diğer Donanımlar
-Ağırlık ve Performans Optimizasyonu (İkinci Çalışma)
-İkinci aşamada, her bileşenin ağırlığına ek olarak, bu bileşenlerin aracın performansına olan katkı katsayıları da göz önüne alınmıştır. Performans katsayıları negatif olduğu için daha düşük ağırlıklar performansı olumlu yönde etkilemektedir.
-
-Amaç fonksiyonu, ağırlıkların minimize edilmesi ve performans kazancının birlikte optimize edilmesi üzerine kurulmuştur. Bu çalışmada da minimum ve maksimum ağırlık limitleri ve toplam ağırlık sınırı korunmuştur.
-
-Sonuçlar ve Analizler
-İlk çalışmada, optimize edilmiş ağırlıkların toplamının belirlenen sınır olan 225 kg'yi aşmadığı gözlemlenmiştir. İkinci çalışmada ise, ağırlık optimizasyonuna ek olarak performans katsayılarının da dikkate alındığı ve bu sayede aracın genel verimliliğinin artırılabileceği gösterilmiştir.
-
-Kurulum ve Çalıştırma
-Bu projeyi çalıştırmak için gerekli Python kütüphanelerini aşağıdaki gibi kurabilirsiniz:
+Projeyi çalıştırmak için gerekli Python kütüphanelerini aşağıdaki gibi kurabilirsiniz:
 
 bash
 Kodu kopyala
-pip install numpy scipy
-Ardından, kodu çalıştırarak optimizasyon sonuçlarını görebilirsiniz.
+pip install numpy pandas scikit-learn matplotlib scipy
+Ardından, ilgili Python dosyalarını çalıştırarak sonuçları görebilirsiniz
