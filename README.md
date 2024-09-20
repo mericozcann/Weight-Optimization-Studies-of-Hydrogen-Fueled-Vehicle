@@ -1,4 +1,4 @@
-# Hydrogen-Powered Electric City Vehicle Optimization Projects (Rewritten)
+# Weight Optimization Studies of Hydrogen Fueled Electric City Vehicle
 ## Project 1: Weight Optimization of Hydrogen-Powered Electric Vehicle
 ### Overview
 This project focuses on optimizing the weight of key components in a hydrogen-powered electric city vehicle, such as the motor, fuel cell, chassis, and hydrogen tank. The goal is to improve vehicle energy efficiency by minimizing the overall weight while respecting specific weight limits for each component.
@@ -54,7 +54,7 @@ This project utilizes clustering algorithms and data normalization to analyze th
 * Future work could integrate additional vehicle parameters, like aerodynamics, into the clustering analysis for a more comprehensive view.
 * This format retains the structure of your original projects while highlighting the technical processes and outcomes in a clear and concise manner.
 
-# Hidrojen Yakıtlı Elektrikli Şehir Aracı Optimizasyonu
+# Hidrojen Yakıtlı Elektrikli Şehir Aracının Ağırlık Optimizasyon Çalışmaları
 ## Proje 1: Hidrojen Yakıtlı Elektrikli Araç İçin Ağırlık Optimizasyonu
 ### Genel Bakış
 Bu proje, hidrojen yakıtlı elektrikli bir şehir aracının bileşenlerinin ağırlık dağılımını optimize etmeye odaklanmaktadır. Amacımız, motor, yakıt hücresi, şasi ve diğer kritik bileşenlerin ağırlıklarını göz önünde bulundurarak enerji verimliliğini artırmaktır.
