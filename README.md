@@ -1,8 +1,8 @@
 ### Weight Optimization and Performance Contribution for Hydrogen-powered Electric Urban Vehicle
-##1. Introduction
+## 1. Introduction
 This project focuses on optimizing the weight distribution of various components in a hydrogen-powered electric urban vehicle. The goal is to minimize the total weight while accounting for performance contributions of key components, which impact the vehicle's overall efficiency and performance.
 
-##2. Optimization Objectives
+## 2. Optimization Objectives
 The objectives of the optimization are twofold:
 
 Weight Minimization: Reducing the total weight of the vehicle by adjusting component weights within predefined limits.
@@ -10,8 +10,8 @@ Performance Contribution: Factoring in the negative performance contribution of 
 ##3. Components and Constraints
 The main components considered in the optimization are:
 
-Motor Weight
-Fuel Cell Weight
+** Motor Weight
+** Fuel Cell Weight
 Chassis Weight
 Hydrogen Tank Weight
 Wheels Weight
