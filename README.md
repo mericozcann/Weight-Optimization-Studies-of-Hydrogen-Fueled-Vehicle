@@ -4,7 +4,7 @@
 This project focuses on optimizing the weight distribution of components in a hydrogen-powered electric city vehicle. The aim is to improve energy efficiency by considering the weight of the motor, fuel cell, chassis, and other critical components.
 
 ### Objectives
-**Optimize the weight of components to enhance vehicle energy efficiency.
+* Optimize the weight of components to enhance vehicle energy efficiency.
 **Identify critical components affecting performance and fuel consumption.
 **Analyze relationships between components using machine learning algorithms like clustering.
 ### Methods
