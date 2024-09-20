@@ -1,0 +1,54 @@
+Araç Ağırlık Optimizasyonu ve Performans Analizi
+Bu proje, bir aracın farklı bileşenlerine ait ağırlıkların optimize edilmesi ve aracın genel performansını artırmak için çeşitli optimizasyon tekniklerini uygular. Ağırlık dağılımı ve performans katsayıları göz önünde bulundurularak toplam ağırlık sınırlarına uygun çözümler sunulur.
+
+İçerik
+Kullanılan Kütüphaneler
+Projenin Ana Amacı
+Proje Adımları
+Ağırlık Optimizasyonu (İlk Çalışma)
+Ağırlık ve Performans Optimizasyonu (İkinci Çalışma)
+Sonuçlar ve Analizler
+Kurulum ve Çalıştırma
+Kullanılan Kütüphaneler
+Bu projede aşağıdaki Python kütüphaneleri kullanılmıştır:
+
+numpy
+scipy
+Projenin Ana Amacı
+Bu proje, aracın çeşitli bileşenlerinin ağırlıklarını optimize etmeyi ve toplam ağırlık sınırını aşmadan bu bileşenlerin ağırlıklarını minimum seviyeye çekmeyi amaçlamaktadır. İkinci aşamada, ağırlıkların performansa olan etkisi de göz önüne alınarak daha verimli bir optimizasyon yapılmıştır.
+
+Proje Adımları
+Ağırlık Optimizasyonu (İlk Çalışma)
+İlk çalışma, toplam araç ağırlığının minimize edilmesi amacıyla yapılmıştır. Verilen her bir bileşen için minimum ve maksimum ağırlık sınırları belirlenmiş, toplam ağırlık 225 kg ile sınırlandırılmıştır. Ağırlıkları optimize ederken SLSQP optimizasyon yöntemi kullanılmıştır.
+
+Kullanılan Bileşenler:
+Motor Ağırlığı
+Yakıt Hücresi Ağırlığı
+Şasi Ağırlığı
+Hidrojen Tankı Ağırlığı
+Tekerlekler Ağırlığı
+Süspansiyon Ağırlığı
+Aktarma Organları Ağırlığı
+Diğer Donanımlar
+Kısıtlamalar:
+Toplam ağırlık sınırı: 225 kg
+Her bir bileşen için minimum ve maksimum ağırlık limitleri
+Ağırlık ve Performans Optimizasyonu (İkinci Çalışma)
+İkinci çalışma, sadece ağırlık optimizasyonunu değil, aynı zamanda bu ağırlıkların aracın performansına olan katkısını da göz önünde bulundurarak yapılmıştır. Her bir bileşenin ağırlığının performansa negatif etkisi olacak şekilde katsayılarla birleştirildiği bir hedef fonksiyon tanımlanmıştır. Optimizasyon yine SLSQP yöntemiyle yapılmış ve ağırlık sınırları aynı tutulmuştur.
+
+Performans Katsayıları:
+Motor ve diğer önemli bileşenler için performansa olan negatif etkiler hesaplanmış ve optimize edilmiştir.
+Sonuçlar ve Analizler
+Her iki çalışmada da optimizasyon başarıyla sonuçlanmış ve bileşenlerin ağırlıkları minimize edilmiştir. Performans ve verimlilik açısından ikinci çalışma, aracın performansını artıracak şekilde daha iyi sonuçlar vermektedir.
+
+Sonuç Analizi
+Ağırlık Dağılımı: Optimize edilen ağırlıklar, belirli bileşenlerde önemli hafifletmeler sağlayarak toplam ağırlık sınırına ulaşılmıştır.
+Performans ve Verimlilik: Ağırlıkların optimize edilmesi, aracın performansını ve yakıt verimliliğini artırabilir. Özellikle motor ve yakıt hücresindeki hafifletmeler dikkat çekicidir.
+Maliyet ve Malzeme Seçimi: Daha hafif malzemelerin kullanılması, maliyetleri azaltabilir ve performansı artırabilir.
+Gelecek Çalışmalar: Aerodinamik verimliliği artırmak, aracın yakıt tüketimini daha da iyileştirebilir.
+Kurulum ve Çalıştırma
+Gereksinimler
+Python 3.x
+Gerekli kütüphaneleri yüklemek için pip install numpy scipy komutu kullanılabilir.
+Çalıştırma
+Projenin ana Python dosyasını çalıştırmak için terminalde python main.py komutu kullanılabilir.
