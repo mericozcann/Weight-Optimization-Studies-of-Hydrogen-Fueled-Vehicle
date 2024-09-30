@@ -1,5 +1,5 @@
 # Weight Optimization Studies of Hydrogen Fueled Electric City Vehicle
-## Project 1: Weight Optimization of Hydrogen-Powered Electric Vehicle
+## Project 2: Weight Optimization of Hydrogen-Powered Electric Vehicle
 ### Overview
 This project focuses on optimizing the weight of key components in a hydrogen-powered electric city vehicle, such as the motor, fuel cell, chassis, and hydrogen tank. The goal is to improve vehicle energy efficiency by minimizing the overall weight while respecting specific weight limits for each component.
 
@@ -17,7 +17,7 @@ This project focuses on optimizing the weight of key components in a hydrogen-po
 * Performance and efficiency were potentially enhanced due to the lighter overall vehicle weight, especially in the motor and fuel cell.
 * Further material optimization can reduce costs and increase efficiency.
 * Future work could explore aerodynamic improvements to further enhance energy efficiency.
-## Project 2: Performance-Weighted Weight Optimization
+## Project 1: Performance-Weighted Weight Optimization
 ### Overview
 This project integrates both weight and performance into the optimization process for a hydrogen-powered electric vehicle. The goal is to find a balance between minimizing weight and maximizing performance.
 
